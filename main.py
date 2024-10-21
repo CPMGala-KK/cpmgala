@@ -13,8 +13,8 @@ from pystyle import Colors, Colorate
 
 from cpmgala import CPMGala
 
-__CHANNEL_USERNAME__ = "CP_Aizal"
-__GROUP_USERNAME__   = "CP_Aizal_chat"
+__CHANNEL_USERNAME__ = "cpmgala"
+__GROUP_USERNAME__   = "cpmgala_chat"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -110,7 +110,6 @@ def load_client_details():
     response = requests.get("http://ip-api.com/json")
     data = response.json()
     print(Colorate.Horizontal(Colors.rainbow, '=============[ 𝐋𝐎𝐂𝐀𝐓𝐈𝐎𝐍 ]============='))
-    print(Colorate.Horizontal(Colors.rainbow, f'Ip Address      : {data.get("ip")}'))
     print(Colorate.Horizontal(Colors.rainbow, f'Location.       : {data.get("city")} {data.get("regionName")} {data.get("countryCode")}.'))
     print(Colorate.Horizontal(Colors.rainbow, f'Country         : {data.get("country")} {data.get("zip")}.'))
     print(Colorate.Horizontal(Colors.rainbow, '===============[ 𝐌𝐄𝐍𝐔 ]==============='))
