@@ -549,9 +549,8 @@ if __name__ == "__main__":
                     else: continue
                 else:
                     print(Colorate.Horizontal(Colors.rainbow, 'FAILED.'))
-                    print(Col ok orate.Horizontal(Colors.rainbow, '[!] Please use valid values.'))
+                    print(Colorate.Horizontal(Colors.rainbow, '[!] Please use valid values.'))
                     sleep(2)
                     continue
             else: continue
             break
-        break
